@@ -1,1 +1,0 @@
-export { Title, Text } from './Text';
