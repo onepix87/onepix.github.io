@@ -1,0 +1,33 @@
+.button {
+    padding: 14px 40px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 100ms ease-out;
+}
+
+.button.contrast {
+    background-color: var(--contrast-1);
+    --text: var(--background);
+    border: none;
+}
+
+.button.contrast:hover, .button.contrast:focus {
+    background-color: var(--hover-1);
+}
+
+.button.transparent {
+    background: transparent;
+    --text: var(--contrast-1);
+    border: 2px solid var(--contrast-1);
+}
+
+.button.transparent:hover, .button.transparent:focus {
+    --text: var(--hover-1);
+    border-color: var(--hover-1);
+}
+
+@media (max-width: 1247px) {
+    .button {
+        padding: 7px 40px;
+    }
+}
